@@ -1,59 +1,142 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Loïc's Personal Site </title>
+    <title>Loïc Portfolio</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="cv.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <table cellspacing="20">
-      <tr>
-        <td><img src="images/loic.png" alt="Loïc profile picture" width="250" height="250"></td>
-        <td><h1>Loïc NIRLO</h1>
-        <p><em>Student.</em></p>
-        <p>I'm a french student in computer sciences</p></td>
-      </tr>
-    </table>
-    <hr>
-    <h3>Skills</h3>
 
-    <table cellspacing="10">
-      <tr>
-        <td>
-          <table cellspacing="10">
-            <tr>
-              <td>HTML</td>
-              <td>★★☆☆☆</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>★☆☆☆☆</td>
-            </tr>
-            <tr>
-              <td>JAVASCRIPT</td>
-              <td>☆☆☆☆☆</td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table cellspacing="10">
-            <tr>
-              <td>My SQL</td>
-              <td>★☆☆☆☆</td>
-            </tr>
-            <tr>
-              <td>JQUERY</td>
-              <td>☆☆☆☆☆</td>
-            </tr>
-            <tr>
-              <td>C89</td>
-              <td>★★☆☆☆</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My hobbies</a>
-    <a href="contact_me.html">Contact me</a>
+
+  <body class="bg-active-page1">
+
+    <div class="cursor ccolor" id="cursor"></div>
+
+    <section class="container" >
+
+      <h1 class="select up_button" id="up">Up</h1>
+      <h1 class="select down_button" id="down">Down</h1>
+
+      <div class="nav_bar color" id="color-nav">
+        <h1 class="select" id="ld-page">Loïc Nirlo.</h1>
+        <ul class="nav-links">
+          <li id="acceuil">Accueil</li>
+          <li id="cv">CV</li>
+          <li id="rea">Réalisations</li>
+          <li id="contact">Contact</li>
+        </ul>
+      </div>
+
+      <div class="comp">
+        <h1>| Compétences |</h1>
+      </div>
+      <div class="form">
+        <h1>| Formation |</h1>
+      </div>
+
+      <div class="box" id="box">
+        <div class="hr"><hr></div>
+
+
+        <div class="page page1">
+          <div class="balise"><div class="ward" id="bal-page1"></div></div>
+        </div>
+
+
+        <div class="page page2">
+          <div class="balise"><div class="ward" id="bal-page2"></div></div>
+          <div class="card1 hidden-card1" id="card_one">
+
+          </div>
+        </div>
+
+
+        <div class="page page3">
+          <div class="balise"><div class="ward" id="bal-page3"></div></div>
+          <div class="nom">
+
+          </div>
+          <div class="pdp">
+            <img src="images\PicsArt_12-30-11.57.59 (1).jpg" alt="pdp">
+          </div>
+          <div class="pfort">
+            <h1>| Points forts |</h1>
+            <div class="border pf">
+              <ul>
+                <li>pf1</li>
+                <li>pf2</li>
+                <li>pf3</li>
+                <li>pf1</li>
+                <li>pf2</li>
+                <li>pf3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cont">
+            <h1>| Contact |</h1>
+            <div class="border ct">
+              <ul>
+                <li>Tel :</li>
+                <li>Mail :</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="page page4">
+          <div class="balise"><div class="ward" id="bal-page4"></div></div>
+        </div>
+
+
+        <div class="page page5">
+          <div class="balise"><div class="ward" id="bal-page5"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script src="function.js"></script>
   </body>
 </html>
+
+<!--
+<body class="bg-active-page1">
+  <section class="container" >
+    <div class="box" id="box">
+      <div class="nav_bar">
+        <h1>Loïc Nirlo.</h1>
+        <ul>
+          <li>Accueil</li>
+          <li>CV</li>
+          <li>Réalisations</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="page page1">
+        <div class="balise"><div class="ward" id="page1"></div></div>
+        <h1 id="d1">Down</h1>
+      </div>
+      <div class="page page2">
+        <div class="balise"><div class="ward" id="page2"></div></div>
+        <h1 id="u1">Up</h1>
+        <h1 id="d2">Down</h1>
+      </div>
+      <div class="page page3">
+        <div class="balise"><div class="ward" id="page3"></div></div>
+        <h1 id="u2">Up</h1>
+        <h1 id="d3">Down</h1>
+      </div>
+      <div class="page page4">
+        <div class="balise"><div class="ward" id="page4"></div></div>
+        <h1 id="u3">Up</h1>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+-->
